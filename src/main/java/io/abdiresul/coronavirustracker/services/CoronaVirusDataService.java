@@ -40,7 +40,7 @@ public class CoronaVirusDataService {
                 Integer lastState = Integer.valueOf(record.get(record.size()-1));
                 Integer prevDayState = Integer.valueOf(record.get(record.size()-2));
 
-                System.out.println("State: "+state + "  Country: "+country);
+//                System.out.println("State: "+state + "  Country: "+country);
                 LocationStats lStat = new LocationStats(state,country,lastState);
                 lStat.setDiffFromPrevDay(lastState - prevDayState);
 //                System.out.println(lStat.toString());
